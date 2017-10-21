@@ -1,0 +1,11 @@
+Farhan Fauzan Jamaludin - 1406623644
+
+1. Akan menampilkan row yang berangka ganjil saja
+2. Karena unless adalah sama seperti else if, akan tetapi unless merupakan negative counterpartnya dari if yang
+   berarti apabila boolean nya true makan akan melakukan syntax yang ada dibawahnya
+3. Akan terjadi error karean pada th if student.gpa >= 3.49 mempunyai boolean true, sedangkan unless seharusnya merupa-
+   kan negasinya namun pada kondisi student gpa <= 3.49 maka akan menghasilkan error
+4. <h3 th:if="${student.gpa>=3.49}">Cum Laude!</h3>
+   <h3 th:unless="${student.gpa>=3.49}">Sangat Memuaskan!</h3>
+5. itu merupakan segmen yang terpisah dari file yang berbeda sehingga berupa plugin yang bisa tinggal di pasang
+   di masing-masing page yang diperlukan
