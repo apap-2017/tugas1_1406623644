@@ -1,6 +1,6 @@
 Farhan Fauzan Jamaludin - 1406623644
 
-1. Akan menampilkan row yang berangka ganjil saja
+1. Akan menampilkan bahwa mana saja yang kreditnya ganjil dengan true/false
 2. Karena unless adalah sama seperti else if, akan tetapi unless merupakan negative counterpartnya dari if yang
    berarti apabila boolean nya true makan akan melakukan syntax yang ada dibawahnya
 3. Akan terjadi error karean pada th if student.gpa >= 3.49 mempunyai boolean true, sedangkan unless seharusnya merupa-
