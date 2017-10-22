@@ -1,0 +1,1 @@
+1. Bisa diakses terlebih dahulu melalui localhost:8080/penduduk/view?nik={nik}, dan nanti akan ditampilkan
