@@ -19,10 +19,10 @@ aria-label="Toggle navigation">
 <a class="nav-link" href="/">Home</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="/student/viewall">Daftar Mahasiswa</a>
+<a class="nav-link" href="/student/viewall">Cari Penduduk</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="/student/add">Menambah Mahasiswa</a>
+<a class="nav-link" href="/student/add">Tambah Data Penduduk</a>
 </li>
 </ul>
 <form class="form-inline my-2 my-lg-0">
@@ -40,8 +40,8 @@ Search
 	
       	<h3 th:text="'NIK = ' + ${penduduk.nik}">Student NPM</h3>
 		<h3 th:text="'Nama = ' + ${penduduk.nama}">Student Name</h3>
-		<h3 th:text="'Tempat Lahir = ' + ${penduduk.tempat_lahir}">Student GPA</h3>
-		<h3 th:text="'Tanggal Lahir = ' + ${penduduk.tanggal_lahir}">Student GPA</h3>
+		<h3 th:text="'Tempat Lahir = ' + ${penduduk.tempat_lahir}">Tempat Lahir</h3>
+		<h3 th:text="'Tanggal Lahir = ' + ${penduduk.tanggal_lahir}">Tanggal Lahir</h3>
 		<h3 th:switch="${penduduk.jenis_kelamin}"> 
   			<p th:case="0">Jenis Kelamin = Laki-Laki</p>
   			<p th:case="1">Jenis Kelamin = Perempuan</p> 
@@ -50,12 +50,12 @@ Search
   			<p th:case="0">Kewarganegaraan = WNA</p>
   			<p th:case="1">Kewarganegaraan = WNI</p> 
 		</h3>
-		<h3 th:text="'Id Keluarga = ' + ${penduduk.id_keluarga}">Student GPA</h3>
-		<h3 th:text="'Agama = ' + ${penduduk.agama}">Student GPA</h3>
-		<h3 th:text="'Pekerjaan = ' + ${penduduk.pekerjaan}">Student GPA</h3>
-		<h3 th:text="'Status Perkawinan = ' + ${penduduk.status_perkawinan}">Student GPA</h3>
-		<h3 th:text="'Status dalam Keluarga = ' + ${penduduk.status_dalam_keluarga}">Student GPA</h3>
-		<h3 th:text="'Golongan Darah = ' + ${penduduk.golongan_darah}">Student GPA</h3>
+		<h3 th:text="'Id Keluarga = ' + ${penduduk.id_keluarga}">Keluarga</h3>
+		<h3 th:text="'Agama = ' + ${penduduk.agama}">Agama</h3>
+		<h3 th:text="'Pekerjaan = ' + ${penduduk.pekerjaan}">Pekerjaan</h3>
+		<h3 th:text="'Status Perkawinan = ' + ${penduduk.status_perkawinan}">Perkawinan</h3>
+		<h3 th:text="'Status dalam Keluarga = ' + ${penduduk.status_dalam_keluarga}">Status dalam Keluarga</h3>
+		<h3 th:text="'Golongan Darah = ' + ${penduduk.golongan_darah}">Golongan Darah</h3>
 		<h3 th:switch="${penduduk.is_wafat}"> 
   			<p th:case="0">Status Kematian = Hidup</p>
   			<p th:case="1">Status Kematian = Wafat</p> 
