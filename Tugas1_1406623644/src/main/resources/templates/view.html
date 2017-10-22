@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>View Student by NPM</title>
+    </head>
+    <body>
+      	<h3 th:text="'NIK = ' + ${penduduk.nik}">Student NPM</h3>
+		<h3 th:text="'Nama = ' + ${penduduk.nama}">Student Name</h3>
+		<h3 th:text="'Tempat Lahir = ' + ${penduduk.tempat_lahir}">Student GPA</h3>
+		<h3 th:text="'Tanggal Lahir = ' + ${penduduk.tanggal_lahir}">Student GPA</h3>
+		<h3 th:switch="${penduduk.jenis_kelamin}"> 
+  			<p th:case="0">Jenis Kelamin = Laki-Laki</p>
+  			<p th:case="1">Jenis Kelamin = Perempuan</p> 
+		</h3>
+		<h3 th:switch="${penduduk.is_wni}"> 
+  			<p th:case="0">Kewarganegaraan = WNA</p>
+  			<p th:case="1">Kewarganegaraan = WNI</p> 
+		</h3>
+		<h3 th:text="'Id Keluarga = ' + ${penduduk.id_keluarga}">Student GPA</h3>
+		<h3 th:text="'Agama = ' + ${penduduk.agama}">Student GPA</h3>
+		<h3 th:text="'Pekerjaan = ' + ${penduduk.pekerjaan}">Student GPA</h3>
+		<h3 th:text="'Status Perkawinan = ' + ${penduduk.status_perkawinan}">Student GPA</h3>
+		<h3 th:text="'Status dalam Keluarga = ' + ${penduduk.status_dalam_keluarga}">Student GPA</h3>
+		<h3 th:text="'Golongan Darah = ' + ${penduduk.golongan_darah}">Student GPA</h3>
+		<h3 th:switch="${penduduk.is_wafat}"> 
+  			<p th:case="0">Status Kematian = Hidup</p>
+  			<p th:case="1">Status Kematian = Wafat</p> 
+		</h3>
+    </body>
+</html>

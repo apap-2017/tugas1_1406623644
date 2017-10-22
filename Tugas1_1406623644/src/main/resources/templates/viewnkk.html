@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>View Student by NPM</title>
+    </head>
+    <body>
+      	<h3 th:text="'NKK = ' + ${K.nomor_kk}">Student NPM</h3>
+		<h3 th:text="'Alamat = ' + ${K.alamat}">Student Name</h3>
+		<h3 th:text="'RT/RW = ' + ${K.rt} + $(K.rw) ">Student GPA</h3>
+		<h3 th:text="'Kelurahan = ' + ${L.nama_kelurahan}">Student GPA</h3>
+		<h3 th:text="'Kecamatan = ' + ${C.nama_kecamatan}">Student GPA</h3>
+		<h3 th:text="'Kota = ' + ${N.nama_kota}">Student GPA</h3>
+		<h3 th:each="penduduk,iterationStatus: ${penduduk}">
+			<p th:text="${iterationStatus.count}">1</p>
+			<p th:text="'Nama = ' + ${P.nama}">1</p>
+			<p th:text="'NIK = ' + ${P.nik}">1</p>
+			<p th:text="'Jenis Kelamin = ' + ${P.jenis_kelamin}">1</p>
+			<p th:text="'Tempat Lahir = ' + ${P.tempat_lahir}">1</p>
+			<p th:text="'Tanggal Lahir = ' + ${P.tanggal_lahir}">1</p>
+			<p th:text="'Agama = ' + ${P.agama}">1</p>
+			<p th:text="'Pekerjaan = ' + ${P.pekerjaan}">1</p>
+			<p th:text="'Status Perkawinan = ' + ${P.status_perkawinan}">1</p>
+			<p th:text="'Status Dalam Keluarga = ' + ${P.status_dalam_keluarga}">1</p>
+			<p th:text="'Kewarganegaraan = ' + ${P.is_wni}">1</p>
+			<p th:text="${course.name} + '-' + ${course.credits} + ' sks'" >
+			Nama kuliah-X SKS
+			</p>
+			<br>
+		</h3>
+		<h3 th:switch="${penduduk.jenis_kelamin}"> 
+  			<p th:case="0">Jenis Kelamin = Laki-Laki</p>
+  			<p th:case="1">Jenis Kelamin = Perempuan</p> 
+		</h3>
+		<h3 th:switch="${penduduk.is_wni}"> 
+  			<p th:case="0">Kewarganegaraan = WNA</p>
+  			<p th:case="1">Kewarganegaraan = WNI</p> 
+		</h3>
+		<h3 th:text="'Id Keluarga = ' + ${penduduk.id_keluarga}">Student GPA</h3>
+		<h3 th:text="'Agama = ' + ${penduduk.agama}">Student GPA</h3>
+		<h3 th:text="'Pekerjaan = ' + ${penduduk.pekerjaan}">Student GPA</h3>
+		<h3 th:text="'Status Perkawinan = ' + ${penduduk.status_perkawinan}">Student GPA</h3>
+		<h3 th:text="'Status dalam Keluarga = ' + ${penduduk.status_dalam_keluarga}">Student GPA</h3>
+		<h3 th:text="'Golongan Darah = ' + ${penduduk.golongan_darah}">Student GPA</h3>
+		<h3 th:switch="${penduduk.is_wafat}"> 
+  			<p th:case="0">Status Kematian = Hidup</p>
+  			<p th:case="1">Status Kematian = Wafat</p> 
+		</h3>
+    </body>
+</html>
